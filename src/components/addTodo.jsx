@@ -18,7 +18,7 @@ function addTodo(props) {
               <div className="mb-5">
                 <label
                   for="email"
-                  className="block mb-2 text-sm font-medium text-gray-600"
+                  className="block mb-2 text-sm font-medium text-gray-600 text-center"
                 >
                   Title
                 </label>
@@ -31,11 +31,13 @@ function addTodo(props) {
               <div className="mb-5">
                 <label
                   for="content"
-                  className="block mb-2 text-sm font-medium text-gray-600"
+                  className="block mb-2 text-sm font-medium text-gray-600 text-center"
                 >
                   Content
                 </label>
-                <input
+                <textarea
+                  rows="4"
+                  cols="80"
                   type="text"
                   name="content"
                   className="block w-full p-3 rounded bg-gray-200 border border-transparent focus:outline-none"
@@ -43,10 +45,10 @@ function addTodo(props) {
               </div>
             </form>
             <div className="float-right">
-              <button className="p-3 ml-4 mb-4 bg-indigo-600 text-white rounded shadow">
+              <button className="p-3 ml-2 mb-4 bg-indigo-600 text-white rounded shadow">
                 OK
               </button>
-              <button className="p-3 ml-4 mb-4 bg-indigo-600 text-white rounded shadow">
+              <button className="p-3 ml-2 mb-4 bg-indigo-600 text-white rounded shadow">
                 Cancle
               </button>
             </div>
